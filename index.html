@@ -1,29 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meme Game Studios</title>
-    <style>
-        body {
-            background: #0d0f16;
-            color: #ffffff;
-            font-family: Arial, Helvetica, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        h1 {
-            font-size: 2.5rem;
-            text-align: center;
-            color: #4fe2ff;
-            text-shadow: 0 0 10px rgba(79,226,255,0.7);
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meme Game Studios: a collection of retro-inspired arcade games. Tap an icon to play.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Meme Game Studios – Disposable Games for Disposable Moments">
+    <meta property="og:description" content="Meme Game Studios: a collection of retro-inspired arcade games. Tap an icon to play.">
+    <meta property="og:image" content="/og-image.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Meme Game Studios – Disposable Games for Disposable Moments">
+    <meta name="twitter:description" content="Meme Game Studios: a collection of retro-inspired arcade games. Tap an icon to play.">
+    <meta name="twitter:image" content="/og-image.png">
+    
+    <title>Meme Game Studios – Disposable Games for Disposable Moments</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello from MemeGameStudios.com!</h1>
+    <header class="header">
+        <img src="public/icons/Banner.png" alt="Meme Game Studios" class="logo-image">
+        <p class="tagline">Tap an icon to play</p>
+    </header>
+
+    <main class="main">
+        <div class="phone-frame" role="application" aria-label="Game launcher">
+            <div class="icons-grid" role="list">
+                <!-- Drone Patrol -->
+                <a href="https://drone.memegamestudios.com" class="icon-link" role="listitem" aria-label="Drone Patrol game">
+                    <div class="icon-container">
+                        <div class="icon drone-icon">
+                            <img src="public/icons/drone.png" alt="Drone Patrol" class="icon-image">
+                        </div>
+                        <span class="icon-label">Drone Patrol</span>
+                    </div>
+                </a>
+
+                <!-- USAID Grant -->
+                <a href="https://usaid.memegamestudios.com" class="icon-link" role="listitem" aria-label="USAID Grant game">
+                    <div class="icon-container">
+                        <div class="icon usaid-icon">
+                            <img src="public/icons/usaid.png" alt="USAID Grant" class="icon-image">
+                        </div>
+                        <span class="icon-label">USAID Grant</span>
+                    </div>
+                </a>
+
+                <!-- Border Patrol -->
+                <a href="https://border.memegamestudios.com" class="icon-link" role="listitem" aria-label="Border Patrol game">
+                    <div class="icon-container">
+                        <div class="icon border-icon">
+                            <img src="public/icons/border.png" alt="Border Patrol" class="icon-image">
+                        </div>
+                        <span class="icon-label">Border Patrol</span>
+                    </div>
+                </a>
+
+                <!-- Sombrero Toss -->
+                <a href="https://sombrero.memegamestudios.com" class="icon-link" role="listitem" aria-label="Sombrero Toss game">
+                    <div class="icon-container">
+                        <div class="icon sombrero-icon">
+                            <img src="public/icons/sombrero.png" alt="Sombrero Toss" class="icon-image">
+                        </div>
+                        <span class="icon-label">Sombrero Toss</span>
+                    </div>
+                </a>
+
+                <!-- Coming Soon 1 -->
+                <div class="icon-link coming-soon" role="listitem" aria-label="Coming soon game">
+                    <div class="icon-container">
+                        <div class="icon soon-icon">
+                            <span class="icon-emoji">🔒</span>
+                            <span class="soon-badge">Soon</span>
+                        </div>
+                        <span class="icon-label">Coming Soon</span>
+                    </div>
+                </div>
+
+                <!-- Coming Soon 2 -->
+                <div class="icon-link coming-soon" role="listitem" aria-label="Coming soon game">
+                    <div class="icon-container">
+                        <div class="icon soon-icon">
+                            <span class="icon-emoji">🔒</span>
+                            <span class="soon-badge">Soon</span>
+                        </div>
+                        <span class="icon-label">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">&copy; 2024 Meme Game Studios. All rights reserved.</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+            <span class="footer-separator">•</span>
+            <a href="mailto:memegamestudiodude@gmail.com" class="footer-link">Contact</a>
+        </nav>
+    </footer>
 </body>
 </html>
+
