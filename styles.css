@@ -83,6 +83,22 @@ body {
     width: 100%;
 }
 
+.ads-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adsbygoogle {
+    display: block;
+    margin: 0 auto;
+}
+
 .footer {
     text-align: center;
     padding: 2rem 1rem;
