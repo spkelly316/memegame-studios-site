@@ -224,11 +224,6 @@ body {
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
-/* Hide Border Patrol icon */
-.icon-link[href="https://border.memegamestudios.com"] {
-    display: none;
-}
-
 .sombrero-icon {
     background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
 }
