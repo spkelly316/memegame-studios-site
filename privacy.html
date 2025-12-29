@@ -6,6 +6,7 @@
     <meta name="description" content="Privacy Policy for Meme Game Studios">
     <title>Privacy Policy – Meme Game Studios</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/nav.css">
     <style>
         /* Privacy Policy specific styles */
         .privacy-container {
@@ -114,8 +115,29 @@
     </style>
 </head>
 <body>
-    <header class="header">
-        <h1 class="logo">Meme Game Studios</h1>
+    <!-- Site Navigation Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="https://memegamestudios.com/" class="brand">
+                <img src="public/icons/Banner.png" alt="Meme Game Studios">
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="https://memegamestudios.com/">Home</a></li>
+                    <li><a href="https://drone.memegamestudios.com/">Drone Patrol</a></li>
+                    <li><a href="https://sombrero.memegamestudios.com/">Sombrero Toss</a></li>
+                    <li><a href="https://usaid.memegamestudios.com/">USAID Game</a></li>
+                    <li><a href="https://dogeman.memegamestudios.com/">Doge Man</a></li>
+                    <li><a href="https://memegamestudios.com/privacy.html">Privacy Policy</a></li>
+                    <li><a href="mailto:memegamestudiodude@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="main">
@@ -261,6 +283,7 @@
             <a href="mailto:memegamestudiodude@gmail.com" class="footer-link">Contact</a>
         </nav>
     </footer>
+    <script src="assets/menu.js" defer></script>
 </body>
 </html>
 
