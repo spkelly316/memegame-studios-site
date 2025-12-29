@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information for Parents about Meme Game Studios">
+    <title>For Parents – Meme Game Studios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/nav.css">
+    <style>
+        /* Parents page specific styles */
+        .parents-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .parents-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-top: 2rem;
+        }
+
+        .parents-header h1 {
+            font-size: clamp(1.75rem, 5vw, 2.5rem);
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .parents-header p {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .parents-content {
+            background: var(--phone-bg);
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-phone);
+            border: 1px solid var(--phone-border);
+            line-height: 1.8;
+        }
+
+        .parents-content h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .parents-content h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .parents-content h3 {
+            font-size: 1.125rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .parents-content p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .parents-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .parents-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .parents-content a {
+            color: #667eea;
+            text-decoration: underline;
+        }
+
+        .parents-content a:hover {
+            color: #764ba2;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+
+        .back-link::before {
+            content: "← ";
+        }
+
+        @media (max-width: 600px) {
+            .parents-content {
+                padding: 1.5rem;
+            }
+
+            .parents-content h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Site Navigation Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="https://memegamestudios.com/" class="brand">
+                <img src="public/icons/Banner.png" alt="Meme Game Studios">
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="https://memegamestudios.com/">Home</a></li>
+                    <li><a href="https://drone.memegamestudios.com/">Drone Patrol</a></li>
+                    <li><a href="https://sombrero.memegamestudios.com/">Sombrero Toss</a></li>
+                    <li><a href="https://usaid.memegamestudios.com/">USAID Game</a></li>
+                    <li><a href="https://dogeman.memegamestudios.com/">Doge Man</a></li>
+                    <li><a href="https://memegamestudios.com/privacy.html">Privacy Policy</a></li>
+                    <li><a href="mailto:memegamestudiodude@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="parents-container">
+            <div class="parents-header">
+                <h1>For Parents</h1>
+                <p>Important information about Meme Game Studios</p>
+            </div>
+
+            <div class="parents-content">
+                <h2>Age Guidance</h2>
+                <p>Meme Game Studios is <strong>not directed to children under the age of 13</strong>. Our games contain satirical content, internet memes, and humor that may not be appropriate for younger children. We recommend that parents review the content before allowing children to play.</p>
+
+                <h3>Content Considerations</h3>
+                <p>The games on this site are satirical in nature and may include:</p>
+                <ul>
+                    <li>References to current events and politics</li>
+                    <li>Internet memes and pop culture references</li>
+                    <li>Satirical takes on social issues</li>
+                    <li>Humor that may not be suitable for all ages</li>
+                </ul>
+
+                <h2>Privacy and Data Collection</h2>
+                <p>We take privacy seriously. Here's what parents should know:</p>
+                
+                <h3>What We Don't Collect</h3>
+                <ul>
+                    <li>We do not require account creation or registration</li>
+                    <li>We do not knowingly collect personal information from children under 13</li>
+                    <li>We do not require users to provide names, email addresses, or other identifying information to play games</li>
+                </ul>
+
+                <h3>What We May Collect</h3>
+                <ul>
+                    <li>Basic technical information (IP address, browser type, device type) for site functionality</li>
+                    <li>Usage data to understand how the site is used and improve our games</li>
+                    <li>Information from third-party advertising services (see our <a href="privacy.html">Privacy Policy</a> for details)</li>
+                </ul>
+
+                <h2>Advertising</h2>
+                <p>Our site displays advertisements through third-party services like Google AdSense. These ads help us keep the games free to play. Parents should be aware that:</p>
+                <ul>
+                    <li>Advertisements may be personalized based on browsing behavior</li>
+                    <li>We do not control the specific ads shown by third-party ad networks</li>
+                    <li>You can learn more about managing ad preferences through Google's ad settings</li>
+                </ul>
+
+                <h2>Parental Controls</h2>
+                <p>If you're concerned about your child's access to the internet or specific content, we recommend:</p>
+                <ul>
+                    <li>Using parental control software to monitor and restrict internet access</li>
+                    <li>Reviewing our games yourself before allowing children to play</li>
+                    <li>Discussing appropriate internet use with your children</li>
+                    <li>Configuring browser settings to block cookies or third-party content if desired</li>
+                </ul>
+
+                <h2>Contact Us</h2>
+                <p>If you are a parent or guardian and have concerns about your child's use of our site, or if you believe your child has provided personal information to us without your consent, please contact us immediately:</p>
+                <p><strong>Meme Game Studios</strong><br>
+                Email: <a href="mailto:memegamestudiodude@gmail.com">memegamestudiodude@gmail.com</a></p>
+                <p>We will review your request and take appropriate action, which may include deleting any information we may have collected.</p>
+
+                <h2>Additional Resources</h2>
+                <p>For more information about online safety for children, we recommend visiting:</p>
+                <ul>
+                    <li><a href="https://www.connectsafely.org/" target="_blank" rel="noopener noreferrer">ConnectSafely</a> - Resources for parents about online safety</li>
+                    <li><a href="https://www.commonsensemedia.org/" target="_blank" rel="noopener noreferrer">Common Sense Media</a> - Reviews and advice for parents about media and technology</li>
+                </ul>
+
+                <h2>Questions?</h2>
+                <p>If you have any questions about our content, privacy practices, or how we handle children's information, please don't hesitate to <a href="mailto:memegamestudiodude@gmail.com">contact us</a>. We're here to help.</p>
+            </div>
+
+            <a href="index.html" class="back-link">Back to Home</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">&copy; 2024 Meme Game Studios. All rights reserved.</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+            <span class="footer-separator">•</span>
+            <a href="terms.html" class="footer-link">Terms</a>
+            <span class="footer-separator">•</span>
+            <a href="parents.html" class="footer-link">For Parents</a>
+            <span class="footer-separator">•</span>
+            <a href="mailto:memegamestudiodude@gmail.com" class="footer-link">Contact</a>
+        </nav>
+    </footer>
+    <script src="assets/menu.js" defer></script>
+</body>
+</html>
+
