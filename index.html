@@ -3,21 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meme Game Studios: a collection of retro-inspired arcade games. Tap an icon to play.">
+    <meta name="description" content="Meme Game Studios is a free indie web arcade—fast, funny browser games built for quick breaks. Play instantly on desktop or mobile.">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Meme Game Studios – Stupid Games for Smart People">
-    <meta property="og:description" content="Meme Game Studios: a collection of retro-inspired arcade games. Tap an icon to play.">
+    <meta property="og:title" content="Meme Game Studios | Free Browser Games">
+    <meta property="og:description" content="Meme Game Studios is a free indie web arcade—fast, funny browser games built for quick breaks. Play instantly on desktop or mobile.">
     <meta property="og:image" content="/og-image.png">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Meme Game Studios – Stupid Games for Smart People">
-    <meta name="twitter:description" content="Meme Game Studios: a collection of retro-inspired arcade games. Tap an icon to play.">
+    <meta name="twitter:title" content="Meme Game Studios | Free Browser Games">
+    <meta name="twitter:description" content="Meme Game Studios is a free indie web arcade—fast, funny browser games built for quick breaks. Play instantly on desktop or mobile.">
     <meta name="twitter:image" content="/og-image.png">
     
-    <title>Meme Game Studios – Stupid Games for Smart People</title>
+    <title>Meme Game Studios | Free Browser Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .tagline {
+            margin: 0.5rem 0 1.5rem;
+        }
+        .hero-logo {
+            max-width: 100%;
+            height: auto;
+            max-width: 400px;
+            width: clamp(250px, 80vw, 400px);
+            margin: 0 auto 1rem;
+            display: block;
+        }
+        .hero-intro {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            font-weight: 400;
+            letter-spacing: 0.01em;
+        }
+    </style>
+    
+    <!-- Organization JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Meme Game Studios",
+      "url": "https://memegamestudios.com"
+    }
+    </script>
     <link rel="stylesheet" href="styles.css">
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1602450776756918"
@@ -50,9 +84,11 @@
         </div>
     </header>
 
-    <!-- Tagline Section -->
+    <!-- Hero Section -->
     <div class="header">
+        <img src="public/icons/Banner.png" alt="Meme Game Studios" class="hero-logo">
         <p class="tagline">Stupid Games for Smart People.</p>
+        <p class="hero-intro">Meme Game Studios is a small, indie, web-based arcade — fast, funny games you can play in a minute, built as satire and harmless escapism. Every game is free to play, runs in your browser, and is designed for quick breaks on desktop or mobile.</p>
     </div>
 
     <!-- App Icons -->
@@ -109,36 +145,14 @@
                     </div>
                 </a>
 
-                <!-- Coming Soon 1 -->
-                <div class="icon-link coming-soon" role="listitem" aria-label="Coming soon game">
+                <!-- More Games in Progress (Non-clickable) -->
+                <div class="icon-link coming-soon non-clickable" role="presentation">
                     <div class="icon-container">
                         <div class="icon soon-icon">
                             <span class="icon-emoji">🔒</span>
-                            <span class="soon-badge">Soon</span>
                         </div>
-                        <span class="icon-label">Coming Soon</span>
-                    </div>
-                </div>
-
-                <!-- Coming Soon 2 -->
-                <div class="icon-link coming-soon" role="listitem" aria-label="Coming soon game">
-                    <div class="icon-container">
-                        <div class="icon soon-icon">
-                            <span class="icon-emoji">🔒</span>
-                            <span class="soon-badge">Soon</span>
-                        </div>
-                        <span class="icon-label">Coming Soon</span>
-                    </div>
-                </div>
-
-                <!-- Coming Soon 3 -->
-                <div class="icon-link coming-soon" role="listitem" aria-label="Coming soon game">
-                    <div class="icon-container">
-                        <div class="icon soon-icon">
-                            <span class="icon-emoji">🔒</span>
-                            <span class="soon-badge">Soon</span>
-                        </div>
-                        <span class="icon-label">Coming Soon</span>
+                        <span class="icon-label">More Games in Progress</span>
+                        <span class="icon-subtitle">New drops ship regularly—check back soon.</span>
                     </div>
                 </div>
             </div>
@@ -149,86 +163,43 @@
     <main class="content-main">
         <div class="content-sections">
             <section class="content-section">
-                <h2>What is Meme Game Studios?</h2>
-                <p>Meme Game Studios is a collection of satirical, retro-inspired arcade games that blend humor with simple gameplay. We create disposable entertainment for disposable moments—quick, fun games that don't take themselves too seriously. Each game offers a unique take on modern culture, politics, and internet memes, wrapped in classic arcade-style mechanics.</p>
-            </section>
-
-            <section class="content-section">
-                <h2>Featured Games</h2>
-                
-                <div class="game-blurb">
-                    <h3>Drone Patrol</h3>
-                    <p>Take control of a bomber drone in this fast-paced arcade shooter. Navigate through increasingly challenging levels while taking on more complex enemies. Simple controls, addictive gameplay, and a satirical take on modern defense culture.</p>
-                </div>
-
-                <div class="game-blurb">
-                    <h3>Sombrero Toss</h3>
-                    <p>Whack-a-Mole meets Ring Toss. Master the art of sombrero throwing in this physics-based arcade game. Aim, throw, and score points as you aim for Democrats and avoid Republicans. A lighthearted take on the US goverment shutdown/immigration policy wrapped in fun, engaging gameplay.</p>
-                </div>
-
-                <div class="game-blurb">
-                    <h3>USAID Game</h3>
-                    <p>Navigate the complexities of international aid in this satirical arcade experience. Generate multi-million dollar grants for nonsense. A humorous look at bureaucracy and aid distribution.</p>
-                </div>
-
-                <div class="game-blurb">
-                    <h3>Doge Man</h3>
-                    <p>Join the iconic internet meme in this familiar retro-style platformer. Have Doge Man eat those wasted government dollars. Avoid the crazy spenders, and use the Constitution as a power up!</p>
-                </div>
-            </section>
-
-            <section class="content-section">
-                <h2>New Player Tips</h2>
+                <h2>How it works</h2>
                 <ul>
-                    <li>Each game is designed to be picked up and played immediately—no tutorials needed</li>
-                    <li>Start with any game that catches your eye; there's no required order</li>
-                    <li>Most games feature simple, intuitive controls that work on both desktop and mobile</li>
-                    <li>Don't take the games too seriously—they're meant to be fun, satirical entertainment</li>
-                    <li>Try different games to find your favorite style of gameplay</li>
+                    <li>Free to play: No accounts, no downloads.</li>
+                    <li>Quick sessions: Most games are designed for 1–5 minute runs.</li>
+                    <li>Browser-first: Works best on modern Chrome, Edge, Safari, and Firefox.</li>
+                    <li>Best on Desktop, but mobile is good, too</li>
+                    <li>Supported by ads: Ads help keep the arcade free.</li>
                 </ul>
             </section>
 
             <section class="content-section">
-                <h2>About the Satire</h2>
-                <p>All games on Meme Game Studios are satirical in nature and intended for entertainment purposes only. The content, themes, and humor are not meant to be taken literally or as serious commentary. We create games that poke fun at modern culture, internet memes, and current events through a lens of humor and absurdity. If you're looking for serious gaming experiences or are easily offended by satirical content, these games may not be for you.</p>
+                <h2>About the content</h2>
+                <p>All characters and scenarios are fictional and presented for entertainment and parody. Meme Game Studios does not promote real-world harm, hate, or harassment for the most part. If something ever feels off, please reach out via the Contact link.</p>
             </section>
 
             <section class="content-section">
-                <h2>Frequently Asked Questions</h2>
+                <h2>FAQ</h2>
                 
                 <div class="faq-item">
-                    <h3>Are these games free to play?</h3>
-                    <p>Yes, all games on Meme Game Studios are completely free to play. We support the site through advertising, so you may see ads while browsing.</p>
+                    <h3>Do I need to sign up?</h3>
+                    <p>No. Hell no.</p>
                 </div>
 
                 <div class="faq-item">
-                    <h3>Do I need to create an account?</h3>
-                    <p>No account creation is required. Simply click on any game icon to start playing immediately in your browser.</p>
+                    <h3>Is this kid-friendly?</h3>
+                    <p>Meh. Many games are safe for general audiences, but parents should review titles first. See 'For Parents.'</p>
                 </div>
 
                 <div class="faq-item">
-                    <h3>Can I play these games on mobile?</h3>
-                    <p>Yes! All games are designed to work on both desktop and mobile devices. The responsive design ensures a great experience on any screen size.</p>
+                    <h3>Do you collect personal data?</h3>
+                    <p>We keep things minimal. Details are in the Privacy Policy.</p>
                 </div>
 
                 <div class="faq-item">
-                    <h3>Are there any in-game purchases?</h3>
-                    <p>No, there are no in-game purchases or microtransactions. All games are completely free with no hidden costs.</p>
+                    <h3>Can I suggest a game idea?</h3>
+                    <p>Sure, but don't get your hopes up—use the Contact link.</p>
                 </div>
-
-                <div class="faq-item">
-                    <h3>Will there be more games added?</h3>
-                    <p>Yes! We're constantly working on new games. Keep an eye on the "Coming Soon" slots in the game launcher for future releases.</p>
-                </div>
-            </section>
-
-            <section class="content-section">
-                <h2>Latest Updates</h2>
-                <ul>
-                    <li>New game: Doge Man now available! Experience the meme in retro arcade style.</li>
-                    <li>Improved mobile responsiveness across all games for better gameplay on phones and tablets.</li>
-                    <li>Updated navigation menu with hamburger menu for easier access to all games and pages.</li>
-                </ul>
             </section>
         </div>
     </main>
@@ -258,6 +229,7 @@
             <span class="footer-separator">•</span>
             <a href="mailto:memegamestudiodude@gmail.com" class="footer-link">Contact</a>
         </nav>
+        <p class="footer-email">Email: <a href="mailto:memegamestudiodude@gmail.com" class="footer-link">memegamestudiodude@gmail.com</a></p>
     </footer>
     <script src="assets/menu.js" defer></script>
 </body>
