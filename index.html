@@ -47,6 +47,49 @@
             color: var(--text-muted);
             font-family: 'Courier New', monospace;
         }
+        /* Adsterra Ad Styles */
+        /* Slot #1 (top banners above app icons) */
+        .adsterra-ad {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 16px 0 18px;
+            min-height: 50px;
+        }
+        .adsterra-desktop {
+            display: none;
+            width: 100%;
+            justify-content: center;
+        }
+        .adsterra-mobile {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        @media (min-width: 768px) {
+            .adsterra-desktop {
+                display: flex;
+            }
+            .adsterra-mobile {
+                display: none;
+            }
+            .adsterra-ad {
+                min-height: 90px;
+            }
+        }
+        /* Slot #2 (300x250 rectangle above FAQ) */
+        .adsterra-rect {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 22px 0 22px;
+            min-height: 250px;
+        }
+        .adsterra-rect-slot {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
     </style>
     
     <!-- Organization JSON-LD -->
@@ -96,6 +139,37 @@
         <p class="tagline">Stupid Games for Smart People.</p>
         <p class="hero-intro">Meme Game Studios is a small, indie, web-based arcade — fast, funny games you can play in a minute, built as satire and harmless escapism. Every game is free to play, runs in your browser, and is designed for quick breaks on desktop or mobile.</p>
     </div>
+
+    <!-- Adsterra Slot #1: Top banners above app icons -->
+    <section class="adsterra-ad adsterra-ad--slot1" aria-label="Advertisement">
+        <div class="adsterra-desktop">
+            <!-- Desktop 728x90 -->
+            <script>
+              atOptions = {
+                'key' : 'e970d7f68864108a3ecc8a2a30731bf0',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+              };
+            </script>
+            <script src="https://www.highperformanceformat.com/e970d7f68864108a3ecc8a2a30731bf0/invoke.js"></script>
+        </div>
+
+        <div class="adsterra-mobile">
+            <!-- Mobile 320x50 -->
+            <script>
+              atOptions = {
+                'key' : '863188300b38858a980ec4ff59b61fb8',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+              };
+            </script>
+            <script src="https://www.highperformanceformat.com/863188300b38858a980ec4ff59b61fb8/invoke.js"></script>
+        </div>
+    </section>
 
     <!-- App Icons -->
     <div class="main">
@@ -181,6 +255,23 @@
             <section class="content-section">
                 <h2>About the content</h2>
                 <p>All characters and scenarios are fictional and presented for entertainment and parody. Meme Game Studios does not promote real-world harm, hate, or harassment. If something ever feels off, please reach out via the Contact link.</p>
+            </section>
+
+            <!-- Adsterra Slot #2: Rectangle above FAQ -->
+            <section class="adsterra-rect adsterra-rect--slot2" aria-label="Advertisement">
+                <div class="adsterra-rect-slot">
+                    <!-- Rectangle 300x250 Slot #2 -->
+                    <script>
+                      atOptions = {
+                        'key' : '78b696d3b7d06f5e59b01a864abc369d',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                      };
+                    </script>
+                    <script src="https://www.highperformanceformat.com/78b696d3b7d06f5e59b01a864abc369d/invoke.js"></script>
+                </div>
             </section>
 
             <section class="content-section">
