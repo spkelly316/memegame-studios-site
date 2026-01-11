@@ -462,9 +462,7 @@ body {
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
     overflow-y: auto;
     visibility: hidden;
-}
-
-/* Show menu ONLY when is-open class is added */
+}/* Show menu ONLY when is-open class is added */
 .site-header.is-open .main-nav {
     transform: translateX(0);
     visibility: visible;
