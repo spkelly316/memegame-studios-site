@@ -437,9 +437,7 @@ body {
 .brand:focus {
     opacity: 0.8;
     outline: none;
-}
-
-.brand img {
+}.brand img {
     max-height: 40px;
     width: auto;
     display: block;
